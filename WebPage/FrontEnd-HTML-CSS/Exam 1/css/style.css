@@ -1,0 +1,310 @@
+/* @font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+} */
+:root {
+    /* COLORS */
+    --mainColor: #f25454;
+    --Textcolor: rgba(0, 0, 0, 0.55);
+    --backcolor: rgb(0, 0, 0, 0.8);
+    --mainColorOpacity75: rgba(242, 84, 84, 0.75);
+    --footercolor: #222;
+    --lightdark:#1a1a1a;
+    /* Fonts */
+}
+
+a,
+button,
+h3,
+img,
+.memberLayer {
+    transition: 0.8s !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* Header img */
+.carousel-caption {
+    bottom: unset;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.introslider h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--mainColor);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 700;
+}
+
+.navbar-social a {
+    color: var(--Textcolor);
+    padding-left: 1rem;
+}
+
+.navbar-social a:hover {
+    color: #f25454;
+}
+
+.settings .settingButton {
+    top: 25%;
+    z-index: 1000;
+    color: #fff;
+    background-color: var(--backcolor);
+    padding: 0.3rem 0.5rem;
+}
+
+.settings .settingButton:hover {
+    background-color: var(--Textcolor);
+}
+
+h2.SectionHeader {
+    position: relative;
+    display: inline;
+    padding: 1rem;
+}
+
+h2.SectionHeader:hover::after {
+    width: 100px;
+}
+
+h2.SectionHeader::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    margin: auto;
+    height: 2px;
+    top: 105%;
+    left: 0px;
+    right: 0px;
+    background-color: var(--Textcolor);
+    transition: 0.8s;
+}
+
+p.SectionHeader {
+    width: 60%;
+    padding-top: 1rem;
+    color: var(--Textcolor);
+}
+
+.progress {
+    height: 3px;
+}
+
+.progress-bar {
+    background-color: var(--mainColor);
+    height: 3px;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-95 {
+    width: 95% !important;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    border: 1px solid var(--Textcolor);
+    width: unset;
+    padding: 0.6rem 0.5rem;
+    opacity: 1;
+}
+
+.introslider div.buttons {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Aboutmember h3 {
+    font-weight: 500;
+}
+
+.Aboutmember h3:hover {
+    color: var(--mainColor);
+}
+
+.Aboutmember .memberLayer {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--mainColorOpacity75);
+    opacity: 0;
+}
+
+.Aboutmember:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.Aboutmember:hover .memberLayer {
+    opacity: 1;
+}
+.Aboutmember:hover h3{
+    color: var(--mainColor);
+}
+
+.imgSection {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.serviceitem:hover h3,
+.Contactitem:hover h3 {
+    color: var(--mainColor);
+}
+
+.serviceitem i,
+.Contactitem i {
+    color: var(--mainColor);
+}
+
+.serviceitem,
+.Contactitem {
+    padding: 1rem;
+}
+
+.Contactitem a:hover,
+.footercontent a:hover,
+.bottomFooter a:hover,
+.Copyright a:hover {
+    color: var(--mainColor) !important;
+}
+
+.GetInTouch .form button {
+    background-color: var(--mainColor);
+    border: none;
+}
+
+/* footer */
+footer {
+    background-color: var(--footercolor);
+}
+
+.footer-bg {
+    background-image: url(./../imgs/dotted-map.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.arrowtop {
+    background-color: var(--mainColor);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.arrowtop:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: transparent;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+.bottomFooter a,
+.Copyright a {
+    color: #fff;
+}
+.Bolg .carousel-indicators{
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    position: unset !important;
+}
+.Bolg .carousel-indicators [data-bs-target]{
+    width: 100px !important;
+    height: auto !important;
+    text-indent: unset !important;
+    margin: 1rem ;
+}
+.carousel-indicators .active{
+    transform: scale(1.2,1.2);
+}
+.introslider .buttons .carousel-control-prev:hover ,.introslider .carousel-control-next:hover{
+    color: var(--mainColor);
+}
+.introslider{
+    position: relative;
+}
+.mouse{
+    width: 1.9rem;
+    height: 2.9rem;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 25px;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mouse .dot{
+    font-size: 0.8rem;
+    position: absolute ;
+    top: 5px;
+    transition: 0.8s;
+    animation: downfade 1.5s linear 0.5s infinite;
+}
+@keyframes downfade{
+    0%{
+        top: 5%;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        top: 50%;
+        opacity: 0;
+    }
+
+}
+.introslider >a:hover, .introslider >a:hover .dot{
+    border-color: var(--mainColor);
+    color: var(--mainColor) !important;
+}
+.bg-lightdark{
+    background-color: var(--lightdark);
+}

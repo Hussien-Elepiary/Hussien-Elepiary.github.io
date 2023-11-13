@@ -1,0 +1,19 @@
+.mainbg{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./../field-clouds-sky-earth-46160.jpeg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+a.nav-link.active,
+a.nav-link:hover
+{
+    border: 2px solid #09c;
+    color: #09c !important;
+}
+a.nav-link{
+    text-align: center;
+    transition: 0.5s;
+    border: 2px solid transparent;
+    border-radius: 3rem;
+    width: calc(100% + 1rem);
+}

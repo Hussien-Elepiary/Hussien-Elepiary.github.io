@@ -1,0 +1,436 @@
+@font-face {
+    font-family: Playball;
+    src: url(./../fonts/Playball-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Playball';
+    box-sizing: border-box;
+}
+.DarkColor{
+    background-color: #F8F9FA;
+}
+._container{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;  
+}
+::selection {
+    background: #20c997;
+    color: #fff;
+    text-shadow: none;
+  }
+/* For ALL Headers */
+.Header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Header h2{
+    opacity: 0.1;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.Header p{
+    position: absolute;
+    font-size: 2rem;
+    padding-top: 2rem ;
+    font-weight: 600;
+}
+/* END For ALL Headers */
+/* NavBar */
+.Background{
+    background-color: rgba(0, 0, 0, 0.562);
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.Navlinks{
+    width: 100%;
+}
+.Navlinks ul{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+}
+.Navlinks a{
+    font-size: 1.2rem;
+    text-decoration:none;
+    color: #fff;
+    padding: .9rem;
+    transition: .9s;
+}
+.Navlinks a:hover{
+    color: #20c997;
+}
+/* End NavBar */
+/* hero */
+._btn{
+    padding: 1rem;
+}
+._btn a{
+    font-size: 20px;
+    border: 1px solid #20c997;
+    border-radius: 25px;
+    color: #20c997;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    transition: .9s;
+}
+._btn-hover a:hover{
+    background-color: #20c997;
+    color: #fff;
+}
+.darklayer{
+    background-color: #111418ce;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Herocontent{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.Hero{
+    height: 100vh;
+    background-image: url('./../images/intro-bg.jpg');
+    background-size: cover; 
+}
+/* hero */
+/* About section */
+.textcontainer span{
+    color: #20c997;
+}
+.AboutMe{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.textcontainer{
+    text-align: left;
+}
+._btn-green a{
+    background-color: #20c997;
+    color: #fff;
+    box-shadow: 2px 4px 8px #888;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.textcontainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.CVdetails hr{
+    height: 1px;
+}
+.CVdetails li ,.Counters li{
+    list-style: none;
+}
+.CVdetails li{
+    padding: .5rem;
+}
+.CVdetails span
+{
+    font-weight: 600;
+}
+.Counters{
+    display: flex;
+    justify-content: space-between;
+}
+.CounterMem{
+    text-align: center;
+}
+.CounterMem_Num{
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+.CounterMem_Name{
+    font-size: 1.5rem;
+}
+/* End About */
+/* What to do */
+.WhatContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Card_What{
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.icon_boarder i{
+    box-shadow: 1px 1px 2px #000;
+    color: #20c997;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border: 1px solid #F1F1F1;
+    background-color: #fff;
+}
+.card_text{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+/* END What to do */
+/* Summary */
+.redtext{
+    color: #ff0000;
+}
+.content_Sum_Card{
+    padding-top: 1rem;
+}
+.date p{
+    font-size: 15px;
+    display: inline;
+    background-color: #20c997;
+    color: #fff;
+    padding: .5em;
+    border-radius:10px ;
+}
+.Sum_Card{
+    border: 1px solid #f1f1f1;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.SummaryContent{
+    display: flex;
+}
+.Education ,.Experiance{
+    width: 50%;
+}
+.progBar{
+    background-color: #E9ECEF;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progload{
+    background-color: #20c997;
+    width: 65%;
+    height: inherit;
+}
+.progresbar{
+    width: 45%;
+    padding: .5rem 0;
+}
+.progText{
+    display: flex;
+    justify-content: space-between;
+}
+.SkillCon{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* End Summary */
+/* Portofolio */
+.HoverCont{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000083;
+    color: #fff;
+    opacity: 0;
+    transition: .6s;
+}
+.Hover:hover .HoverCont{
+    opacity: 1;
+}
+.Hover{
+    margin: 1rem 0;
+}
+.Hover,.HoverCont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.protoimgs{
+    width: 30%;
+}
+.protoimgs img{
+    width: 100%;
+}
+.ProtofolioImgs{
+    display: flex;
+    justify-content: space-around;
+}
+.PortofolioList li{
+    list-style: none;
+    padding: 1rem;
+}
+.PortofolioList a{
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+.PortofolioList a:hover{
+    color: #20c997;
+}
+._active a{
+    color: #20c997;
+    border-bottom: 2px solid #20c997;
+}
+.PortofolioList ,.PortofolioList ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* END Portofolio */
+/* testimonial */
+.testheader{
+    display: flex;
+}
+.testheader img{
+    border-radius: 50%;
+    padding: 1rem;
+}
+.testHeaderName{
+    padding: 1rem;
+}
+.Test_Card{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #F8F9FA ;
+}
+.TestCards{
+    display: flex;
+}
+/* End testimonial */
+/* Contact */
+.contactContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.ContactAdd{
+    width: 30%;
+    font-size: 1.2rem;
+}
+.ContactAdd p{
+    padding: .5rem;
+}
+.ContactAdd li{
+    padding: .5rem;
+    list-style: none;
+}
+.ContactAdd i{
+    color: #20c997;
+}
+.Form{ 
+    width: 60%;
+}
+.formInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formInputs input,.formInputs textarea{
+    font-size: 1.5rem;
+    padding: .75rem;
+    margin-top : .75rem;
+    width: 100%;
+}
+.formInputs textarea{
+    resize: vertical;
+}
+._btnbutton{
+    width: 50%;
+    border-radius: 2rem ;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: .75rem;
+    margin-top : .75rem;
+    background-color: #20c997;
+    border: none;
+    box-shadow: 1px 1px 5px #000;
+}
+/* END Contact */
+/* footer */
+.footer{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    color: #20c997;
+    text-decoration: none;
+}
+.Terms{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.Terms a{
+    color: #000;
+}
+.footer a:hover{
+    color: #138563;
+}
+/* footer */
+/* RWD  For that Sec*/
+
+/* smallsize */
+@media screen and (max-width : 750px)
+{
+    ._container{
+        margin: .7rem;
+        padding: 0;
+    }
+    .CounterMem{
+        width: 45%;
+        padding-top: 10px;
+    }
+    .Card_What,.Education,.Experiance,.ContactAdd,.Form{
+        width: 100%;
+    }
+    .SummaryContent,.contactContainer {
+        flex-direction: column ;
+    }
+    .protoimgs{
+        width: 100%;
+    }
+    .content,.Counters,.WhatContent,.SummaryContent,.ProtofolioImgs,.TestCards,.contactContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+/* Medium size */
+@media screen and (min-width : 751px) and (max-width : 1200px)
+{
+    .content{
+        flex-wrap: wrap;
+    }
+}
+
+/* END  RWD  For that Sec */

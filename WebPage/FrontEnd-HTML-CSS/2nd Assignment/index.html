@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!--For the page lang Format-->
+    <title>Form</title>
+</head>
+<body>
+        <form>
+            <fieldset style="background-color: #f6f6f6;">
+                <legend style="background-color: #888; color: #fff;">Personal Data</legend>
+                <br>
+                <fieldset style="background-color: #fff;">
+                    <legend style="background-color: #888; color: #fff; padding-top: 40px; padding-bottom: 40px;">YourName</legend>
+                    <br>
+                    <table>
+                        <tr>
+                            <td><label for="firstName">firstName</label></td>
+                            <td>:</td>
+                            <td><input id="firstName" type="text" name="firstName" placeholder="ex Hussien" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">lastName</label></td>
+                            <td>:</td>
+                            <td><input id="lastName" type="text" name="lastName" placeholder="ex Elebiary" required/></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br>
+                <table>
+                    <tr>
+                        <td><label for="PhoneNumber">PhoneNumber</label></td>
+                        <td>:</td>
+                        <td><input id="PhoneNumber" type="tel" name="PhoneNumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="ex 0109-666-9113" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td>:</td>
+                        <td><input id="Email" type="email" name="Email" placeholder="exampile@exampile.com" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Password">Password</label></td>
+                        <td>:</td>
+                        <td><input id="Password" type="password" name="Password" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="re-Password">re-Password</label></td>
+                        <td>:</td>
+                        <td><input id="re-Password" type="password" name="re-Password" required/></td>
+                    </tr>
+                </table>
+                    <br>
+                    <hr>
+                    <br>
+                <table>
+                    <tr>
+                        <td><label for="gender">gender</label></td>
+                        <td>:</td>
+                        <td>
+                            <label>Male</label>
+                            <input checked id="gender" type="radio" name="gender" value="Male"/>
+                            <label>Female</label>
+                            <input id="gender" type="radio" name="gender" value="female"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="Studing">Studing</label></td>
+                        <td>:</td>
+                        <td>
+                            <label>Studint</label>
+                            <input checked id="Studing" type="checkbox" name="Studing" value="Studint"/>
+                            <label>Graduated</label>
+                            <input id="Studing" type="checkbox" name="Studing" value="Graduated"/>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <hr>
+                <br>
+                <table>
+                    <tr>
+                        <td><label for="colage">colage</label></td>
+                        <td>:</td>
+                        <td>
+                            <select name="colage" id="colage">
+                                <option disabled selected>--select A Colage--</option>
+                                <optgroup label="Egyption">
+                                    <option value="Ain shams">Ain shams</option>
+                                    <option value="Cairo University">Cairo University</option>
+                                </optgroup>
+                                <optgroup label="International">
+                                    <option value="AUC">Amrican University</option>
+                                    <option value="BUC">British University</option>
+                                </optgroup>
+                                <optgroup disabled label="Academies">
+                                    <option value="FA">Future Academy</option>
+                                    <option value="SA">Sun Academy</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ٍSubmition</td>
+                        <td>:</td>
+                        <td><button type="submit"><img src="./imgs/icons8-submit-64.png" alt="submitButton"></button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+</body>
+</html>

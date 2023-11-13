@@ -1,0 +1,59 @@
+.bg-img1{
+    background-image:url(./../img/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.bg-img2{
+    background-image: url(./../img/counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.bg-img3{
+    background-image: url(./../img/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.aboutmecard li{
+    list-style: none;
+}
+html,
+.sectionPGColor{
+    background-color: #F5F5F5;
+}
+.iconsection{
+    border-radius: 50% ;
+    border: 0.5rem solid #0078FF;
+    margin: 5px;
+    transition: 0.8s;
+}
+._Serv-card:hover .iconsection ,.iconsection:hover{
+    border: 0.5rem solid #3290fc;
+    background-color: #0078FF;
+    color: #F5F5F5;
+}
+._Serv-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.Counters .iconsection{
+    border: 0.5rem solid #ffffffb4;
+}
+.zindex{
+    z-index: 1000;
+}
+.zoom{
+    transition: 0.8s;
+}
+.zoom:hover{
+    transform: scale(1.2);
+}
+.link-hover a{
+    transition: 0.8s;
+}
+.link-hover a:hover{
+    color:  #0078FF !important;
+}
