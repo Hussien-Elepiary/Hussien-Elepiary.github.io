@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="">
     <!-- NavBar -->
     <nav class="NavBar navbar navbar-dark navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -29,7 +29,7 @@
                         <a class="nav-link active" aria-current="page" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Skills">Skills</a>
+                        <a class="nav-link active" aria-current="page" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#Portifolio">Portifolio</a>
@@ -40,15 +40,22 @@
     </nav>
     <!-- End NavBar -->
     <!-- Hero -->
-    <div class="Slider" id="Home">
-        <div class="ColorShadow">
-            <div class="SliderContent">
-                <p>Hello i'm</p>
-                <h1>Hussien Assem</h1>
-                <p>FullStack Developer</p>
+
+    <header class="homeSection Slider vh-100 " id="homeSection">
+        <!-- Start Layer -->
+        <div
+            class="layer ColorShadow w-100 h-100 d-flex flex-wrap justify-content-center align-items-center position-relative">
+
+
+            <!-- Start Home Content -->
+            <div class="content text-center text-light">
+                <h4 class="text-capitalize h2">Hello I`m</h4>
+                <h1 class="text-capitalize">Hussien Assem</h1>
+                <p class="h3">FullStack Developer</p>
+                <p class="h5">Wellcome to my First CV-Site</p>
             </div>
-        </div>
-    </div>
+            <!-- End Layer -->
+    </header>
     <!-- End Hero -->
     <!-- About -->
     <section class="About py-5" id="About">
@@ -122,10 +129,8 @@
                             </ul>
                             <!-- Buttons -->
                             <div class="_btnContainer">
-                                <a href="" class="btn btn-outline-primary">Download CV <i
+                                <a href="/assets/files/Hussien Assem CV.pdf" class="btn btn-outline-primary" download>Download CV <i
                                         class="fa-solid fa-download"></i></a>
-                                <a href="" class="btn btn-outline-primary">Hire Me <i
-                                        class="fa-solid fa-paper-plane"></i></a>
                             </div>
                             <!-- End Buttons -->
                         </div>
@@ -136,129 +141,164 @@
     </section>
     <!-- End About -->
     <!-- Services -->
-    <div class="OurServices GrayBackGround" id="Services">
-        <div class="_container GrayBackGround">
+    <section class="OurServices GrayBackGround" id="Services">
+        <div class="container p-5">
             <div class="Header">
                 <h2>
                     Our Services
                 </h2>
             </div>
-            <div class="ServDetailsSection">
-                <div class="_cardServs">
-                    <i class="icofont-calculations"></i>
-                    <h3>
-                        UI/UX DESIGN
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus autem possimus ex!
-                        Adipisci cumque, iste quae similique quis numquam?</p>
+            <div class="ServDetailsSection p-5">
+                <div class="row ">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="_cardServs w-100  h-100">
+                            <i class="icofont-calculations"></i>
+                            <h3>
+                                UI/UX DESIGN
+                            </h3>
+                            <p>Send a PSD file, has the things you asked for with the best way to display it for the end
+                                user to be satisfied with while using it.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="_cardServs w-100  h-100">
+                            <i class="icofont-code"></i>
+                            <h3>
+                                Back-Stack DEVELOPMENT
+                            </h3>
+                            <p>Develop a Back-End system like API and Database For your Company</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="_cardServs w-100  h-100">
+                            <i class="icofont-dashboard-web"></i>
+                            <h3>
+                                Front-End DESIGN
+                            </h3>
+                            <p>Design a Front End For like a web-Site or a landing page</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="_cardServs w-100  h-100">
+                            <i class="icofont-settings-alt"></i>
+                            <h3>
+                                Full-Stack Development
+                            </h3>
+                            <p>Make a full system for the company (Back,Front)-End</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="_cardServs">
-                    <i class="icofont-code"></i>
-                    <h3>
-                        APP DEVELOPMENT
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus autem possimus ex!
-                        Adipisci cumque, iste quae similique quis numquam?</p>
-                </div>
-                <div class="_cardServs">
-                    <i class="icofont-dashboard-web"></i>
-                    <h3>
-                        PRODUCT DESIGN
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus autem possimus ex!
-                        Adipisci cumque, iste quae similique quis numquam?</p>
-                </div>
-                <div class="_cardServs">
-                    <i class="icofont-settings-alt"></i>
-                    <h3>
-                        UI/UX DESIGN
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloribus autem possimus ex!
-                        Adipisci cumque, iste quae similique quis numquam?</p>
-                </div>
-                <div class="clr"></div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End Services -->
     <!-- Protfolio -->
-    <div class="portofolio" id="Portifolio">
+    <section class="portofolio" id="Portifolio">
         <div class="_container">
             <div class="ProtNav">
                 <div class="Header">
                     <h2>Our Portifolio</h2>
                 </div>
-                <div class="PortofolioList">
-                    <button>All</button>
-                    <button>GRAPHIC</button>
-                    <button>WEB DESIGN</button>
-                    <button>BRANDING</button>
-                </div>
             </div>
             <div class="PrtofolioDATA row row-cols-2">
                 <div class="_PortofolioCard">
-                    <div class="card">
-                        <img src="assets/images/1stAssginment.PNG" alt="1pg" class="card-img-top h-100">
+                    <div class="card h-100">
+                        <img src="assets/images/1stAssginment.PNG" alt="1pg" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text h5">The First Project i made it was an assignment to devide HTML page
+                                using (Tables)</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/1st Assignment/Tables.Html"
+                                class="btn btn-outline-success">Goto</a>
                         </div>
                     </div>
                     <img>
                 </div>
                 <div class="_PortofolioCard">
-                    <div class="card">
-                        <img src="assets/images/2ndAssginment.PNG" alt="1pg" class="card-img-top h-100">
+                    <div class="card h-100">
+                        <img src="assets/images/2ndAssginment.PNG" alt="1pg" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text h5">This is the First Project the target For it is make a Form</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/2nd Assignment/index.html"
+                                class="btn btn-outline-success">Goto</a>
                         </div>
                     </div>
                     <img>
                 </div>
                 <div class="_PortofolioCard">
-                    <div class="card">
-                        <img src="assets/images/3rdAssginment.PNG" alt="1pg" class="card-img-top h-100">
+                    <div class="card h-100">
+                        <img src="assets/images/3rdAssginment.PNG" alt="1pg" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text h5">The target of this project is to make a Page and split the sections
+                                using Position Att in CSS.</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/3rd Assignment/index.html"
+                                class="btn btn-outline-success">Goto</a>
                         </div>
                     </div>
                     <img>
                 </div>
                 <div class="_PortofolioCard">
-                    <div class="card">
-                        <img src="assets/images/4thAssginment.PNG" alt="1pg" class="card-img-top h-100">
+                    <div class="card h-100">
+                        <img src="assets/images/4thAssginment.PNG" alt="1pg" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text h5">The target of this project is to make a Page and split the sections
+                                using Float Left and Right in CSS.</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/4th Assignment/index.html"
+                                class="btn btn-outline-success">Goto</a>
                         </div>
                     </div>
                     <img>
                 </div>
                 <div class="_PortofolioCard">
-                    <div class="card">
-                        <img src="assets/images/5thAssginment.PNG" alt="1pg" class="card-img-top h-100">
+                    <div class="card h-100">
+                        <img src="assets/images/5thAssginment.PNG" alt="1pg" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text h5">The target of this project is to make a Page and split the sections
+                                using Display Att in CSS.</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/5th Assignment/index.html"
+                                class="btn btn-outline-success">Goto</a>
                         </div>
                     </div>
                     <img>
                 </div>
                 <div class="_PortofolioCard">
-                    <div class="card">
-                        <img src="assets/images/6thAssginment.PNG" alt="1pg" class="card-img-top h-100">
+                    <div class="card h-100">
+                        <img src="assets/images/6thAssginment.PNG" alt="1pg" class="card-img-top">
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text h5">The target of this project is to make a Page and split the sections
+                                using Bootstrap</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/6th Assignment/index.html"
+                                class="btn btn-outline-success">Goto</a>
+                        </div>
+                    </div>
+                    <img>
+                </div>
+                <div class="_PortofolioCard">
+                    <div class="card h-100">
+                        <img src="assets/images/Exam1.PNG" alt="1pg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text h5">This was the First challenge Finishing this site in 24hrs using all
+                                i learned</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS/Exam 1/index.html"
+                                class="btn btn-outline-success">Goto</a>
+                        </div>
+                    </div>
+                    <img>
+                </div>
+                <div class="_PortofolioCard">
+                    <div class="card h-100">
+                        <img src="assets/images/Exam2.PNG" alt="1pg" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text h5">This was the First challenge Finishing this site in 24hrs using all
+                                i learned and Connecting my site with a free API Called Movies</p>
+                            <a href="WebPage/FrontEnd-HTML-CSS-JS/Exam 2/index.html"
+                                class="btn btn-outline-success">Goto</a>
                         </div>
                     </div>
                     <img>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End Protfolio -->
 
     <!-- Footer -->
@@ -267,17 +307,12 @@
             <div class="_iconsList">
                 <ul>
                     <li>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/hussien-assem-el-ebiary-544723139/">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://github.com/Hussien-Elepiary">
                             <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
