@@ -115,7 +115,7 @@ ul li p{
 }
 ._cardServs{
     background-color: #fff;
-    padding: 25px 40px;
+    width: 100%;
     text-align: center;
     transition: 0.7s;
     border-radius: 10px ;
